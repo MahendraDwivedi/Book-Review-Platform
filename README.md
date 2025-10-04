@@ -108,6 +108,21 @@ App will run at `http://localhost:3000`.
 
 ### Auth Routes
 
+  ## Health Check
+
+To verify that the backend server is running, you can use the health check endpoint:
+----
+**Endpoint:**
+GET /api/ping 
+
+**Response:**  
+
+```json
+{
+  "ok": true
+}
+----
+
 - **POST `/auth/signup`**
   - Request body:
     ```json
