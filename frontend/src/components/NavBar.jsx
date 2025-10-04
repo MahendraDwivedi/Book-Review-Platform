@@ -23,7 +23,7 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12"> {/* reduced from h-16 to h-12 */}
           {/* Logo/Brand */}
-          <button className="flex items-center space-x-1 text-white font-bold text-lg hover:text-indigo-100 transition-colors duration-200">
+          <button onClick={()=>nav("/")} className="flex items-center space-x-1 text-white font-bold text-lg hover:text-indigo-100 transition-colors duration-200">
             <BookOpen className="w-5 h-5" />
             <span className="hidden sm:inline">Book Reviews</span>
           </button>
